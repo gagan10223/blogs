@@ -1,3 +1,27 @@
-body{
-    background-color: black;
+.justify-centre {
+    margin: 0 auto;
+    text-align: start; /* For text alignment inside the div */
+  }
+
+.check a{
+  border-left: 6px solid rgb(235, 87, 116); ;
+  display: block;
+  margin:40px 0;
+  padding-left: 30px;
+}
+
+.check a:hover{
+  border-left: 6px solid rgb(112, 41, 163);
+}
+
+a.edit{
+  background: rgb(235, 87, 116);
+  color: white;
+  padding: 6px;
+  border: 0;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+a.edit:hover{
+  background: rgb(195, 41, 71);
 }

@@ -5,14 +5,15 @@
     </head>
     <body>
         <%- include('./partials/body.ejs')%>
-        <div class="m-10">
+        <div class="m-10 check">
             <% if (blogs.length > 0) { %>
                 <% blogs.forEach(blog => { %>
                     <div>
-                        <h1 class="text-3xl text-gray-600 p-2"><%= blog.title %></h1>
-                        <h1 class="text-gray-500 pl-2"><%= blog.body %></h1>
-                    </div>
-    
+                        <a class="blogs_detail" href="/blogs/<%= blog._id %>">
+                            <h1 class="text-3xl text-gray-600 pl-2"><%= blog.title %></h1>
+                            <h1 class="text-gray-500 pl-2"><%= blog.body %></h1>
+                        </a>
+                    </div> 
                 <% }); %>
               <% } %>
         </div>    
