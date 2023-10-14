@@ -9,6 +9,9 @@
   margin:40px 0;
   padding-left: 30px;
 }
+.login{
+  background-color: rgb(245, 237, 250);
+}
 
 .check a:hover{
   border-left: 6px solid rgb(112, 41, 163);
