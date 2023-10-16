@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('./partials/head.ejs')%>
+    </head>
+    <body class="login">
+        <div class="flex justify-center">
+            <h1 class="h1_login text-5xl text-gray-600 pt-20 pb-10">
+                Welcome to Blogs
+            </h1>
+        </div>
+        <div>
+            <% if (message) {%>
+                <h1 class="h1_login text-5xl text-gray-600 pt-20 pb-10">
+                    <%= message %>
+                </h1>
+            <% } %>
+        </div>
+
+        <div class="create-blog content">
+            <form action="/main" method="POST">
+              <label class="pb-6" for="title"><h1 class="text-2xl text-gray-600">Please enter your username:</h1></label>
+              <input class="pb-6" type="email" id="title" name="email" required>
+              <label class="pb-6" for="title"><h1 class="text-2xl text-gray-600">Please enter your password</h1></label>
+              <input class="pb-6" type="email" id="title" name="email" required>
+              <input class="pb-6" type="submit" value="Send Email">
+     
+            </form>
+          </div>
+       
+    </body>
+</html>

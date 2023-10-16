@@ -9,7 +9,7 @@ const dburi = 'mongodb+srv://gagan:1234@cluster0.oljierj.mongodb.net/node?retryW
 const app = express();
 
 mon.connect(dburi,{useNewUrlParser:true,useUnifiedTopology:true})
-.then(result => app.listen(2000))
+.then(result => app.listen(4000))
 .catch((err)=> console.log(err))
 
 app.use(method('_method'));
